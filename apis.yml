@@ -1,0 +1,130 @@
+aid: dokku
+name: Dokku
+description: >-
+  Dokku is an open-source Docker-powered self-hosted Platform-as-a-Service that
+  helps you build and manage the lifecycle of applications from initial push to
+  scaling out. Often described as "the smallest PaaS implementation you've ever
+  seen" and a self-hosted mini-Heroku, Dokku turns a single Linux host (or a
+  multi-host scheduler such as K3s or Nomad) into a git-push deployment target
+  that builds applications from Heroku-compatible buildpacks, Cloud Native
+  Buildpacks, Nixpacks, Railpack, Dockerfiles, or pre-built Docker images.
+  Dokku is MIT licensed, written primarily in Bash, and maintained by the
+  Dokku organization on GitHub since 2013. It ships an extensive plugin
+  ecosystem covering data stores (Postgres, MySQL, MariaDB, Redis, MongoDB,
+  RabbitMQ, Elasticsearch, ClickHouse, Meilisearch, Typesense), TLS via
+  Let's Encrypt, HTTP basic auth, maintenance mode, redirects, schedulers
+  for Docker, K3s and Nomad, multiple HTTP proxies (Nginx, HAProxy, Caddy,
+  Traefik, OpenResty), CI integrations, and an official GitHub Action.
+  Dokku's primary interface is the `dokku` CLI invoked over SSH; there is
+  no first-party public HTTP REST API in core (the historical `dokku-api`
+  Ruby wrapper is archived and unmaintained).
+type: Index
+position: Producer
+access: 3rd-Party
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+kind: opensource
+tags:
+  - PaaS
+  - Self-Hosted
+  - Docker
+  - Containers
+  - Buildpacks
+  - Deployment
+  - DevOps
+  - Heroku Alternative
+  - Open Source
+  - Git Push Deploy
+  - Kubernetes
+  - Nomad
+  - K3s
+  - CLI
+  - Plugins
+url: https://raw.githubusercontent.com/api-evangelist/dokku/refs/heads/main/apis.yml
+created: '2026-05-25'
+modified: '2026-05-25'
+specificationVersion: '0.20'
+apis: []
+common:
+  - type: Website
+    url: https://dokku.com
+  - type: Documentation
+    url: https://dokku.com/docs/
+  - type: GettingStarted
+    url: https://dokku.com/docs/getting-started/installation/
+  - type: Tutorials
+    url: https://dokku.com/tutorials/
+  - type: Blog
+    url: https://dokku.com/blog/
+  - type: GitHub
+    url: https://github.com/dokku/dokku
+  - type: GitHubOrganization
+    url: https://github.com/dokku/
+  - type: Releases
+    url: https://github.com/dokku/dokku/releases
+  - type: License
+    url: https://github.com/dokku/dokku/blob/master/LICENSE
+  - type: Sponsorship
+    url: https://github.com/sponsors/dokku
+  - type: Pro
+    url: https://pro.dokku.com/
+  - type: GitHubAction
+    url: https://github.com/dokku/github-action
+  - type: AnsibleModules
+    url: https://github.com/dokku/ansible-dokku
+  - type: GitLabCI
+    url: https://github.com/dokku/gitlab-ci
+  - type: HomebrewTap
+    url: https://github.com/dokku/homebrew-repo
+  - type: AzureQuickstart
+    url: https://github.com/dokku/azure-quickstart-templates
+  - type: Discord
+    url: https://discord.gg/YQjANGMZ
+  - type: Slack
+    url: https://slack.dokku.com/
+  - type: Discussions
+    url: https://github.com/dokku/dokku/discussions
+  - type: Twitter
+    url: https://twitter.com/dokku
+integrations:
+  - name: Docker
+  - name: Heroku Buildpacks
+  - name: Cloud Native Buildpacks
+  - name: Nixpacks
+  - name: Railpack
+  - name: Dockerfile
+  - name: Lambda (lambda-builder)
+  - name: K3s
+  - name: Nomad
+  - name: Nginx
+  - name: HAProxy
+  - name: Caddy
+  - name: Traefik
+  - name: OpenResty
+  - name: Let's Encrypt
+  - name: PostgreSQL (dokku-postgres)
+  - name: MySQL (dokku-mysql)
+  - name: MariaDB (dokku-mariadb)
+  - name: Redis (dokku-redis)
+  - name: MongoDB (dokku-mongo)
+  - name: Memcached (dokku-memcached)
+  - name: RabbitMQ (dokku-rabbitmq)
+  - name: Elasticsearch (dokku-elasticsearch)
+  - name: CouchDB (dokku-couchdb)
+  - name: RethinkDB (dokku-rethinkdb)
+  - name: ClickHouse (dokku-clickhouse)
+  - name: Meilisearch (dokku-meilisearch)
+  - name: Typesense (dokku-typesense)
+  - name: Solr (dokku-solr)
+  - name: NATS (dokku-nats)
+  - name: Pushpin (dokku-pushpin)
+  - name: Graphite/Grafana/StatsD (dokku-graphite)
+  - name: GitHub Actions
+  - name: GitLab CI
+  - name: CircleCI (dokku-orb)
+  - name: Ansible
+  - name: DigitalOcean
+  - name: AWS
+  - name: Azure
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
