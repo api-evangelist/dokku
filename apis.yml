@@ -59,7 +59,7 @@ common:
     url: https://github.com/dokku/dokku
   - type: GitHubOrganization
     url: https://github.com/dokku/
-  - type: Releases
+  - type: ReleaseNotes
     url: https://github.com/dokku/dokku/releases
   - type: License
     url: https://github.com/dokku/dokku/blob/master/LICENSE
@@ -81,7 +81,7 @@ common:
     url: https://discord.gg/YQjANGMZ
   - type: Slack
     url: https://slack.dokku.com/
-  - type: Discussions
+  - type: Forums
     url: https://github.com/dokku/dokku/discussions
   - type: Twitter
     url: https://twitter.com/dokku
