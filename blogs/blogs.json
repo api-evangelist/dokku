@@ -2,13 +2,14 @@
   "repo": "dokku",
   "feeds": [
     {
-      "source": "https://dokku.com/blog/",
-      "feed_url": "",
+      "source": "https://dokku.com/tutorials/",
+      "feed_url": "https://dokku.com/tutorials/",
+      "title": "",
       "saved": 0,
-      "method": "agent-scrape"
+      "method": "none"
     }
   ],
   "post_count": 1,
-  "fetched": "2026-06-27T12:37:46Z",
-  "agent_pulled": "2026-06-27"
+  "fetched": "2026-07-11T11:50:51Z",
+  "agent_pulled": "2026-07-04"
 }
