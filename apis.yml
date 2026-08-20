@@ -35,6 +35,22 @@ access: 3rd-Party
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dokku.png
 kind: opensource
 tags:
+  - Platform-as-a-Service
+  - Self-Hosted
+  - Docker
+  - Containers
+  - Buildpacks
+  - Deployment
+  - DevOps
+  - Heroku Alternative
+  - Open-Source
+  - Git Push Deploy
+  - Kubernetes
+  - Nomad
+  - K3s
+  - CLI
+  - Plugins
+tags_raw:
   - PaaS
   - Self-Hosted
   - Docker
