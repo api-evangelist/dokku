@@ -20,15 +20,20 @@ description: >-
   Ruby wrapper is archived and unmaintained).
 type: Index
 deliveryModel:
-  model: unknown
-  open_source: false
+  model: self-hosted
+  license: MIT
+  license_evidence:
+    repo: dokku/dokku
+    spdx: MIT
+    stars: 32156
+  open_source: true
   commercial: false
   callable_host: false
-  label: Delivery model not determined — needs a product licence on record
-  confidence: low
+  label: Self-hosted open source · you run it yourself
+  confidence: medium
   source:
-  - none
-  generated: '2026-08-28'
+  - repository-license
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: unknown
@@ -54,7 +59,7 @@ tags:
   - Deployment
   - DevOps
   - Heroku Alternative
-  - Open-Source
+  - Open Source
   - Git Push Deploy
   - Kubernetes
   - Nomad
@@ -77,6 +82,7 @@ tags_raw:
   - K3s
   - CLI
   - Plugins
+  - Open-Source
 url: https://raw.githubusercontent.com/api-evangelist/dokku/refs/heads/main/apis.yml
 created: '2026-05-25'
 modified: '2026-05-25'
