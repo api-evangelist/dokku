@@ -1,4 +1,4 @@
-# Dokku (dokku)
+# Dokku
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,81 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Dokku is an open-source Docker-powered self-hosted Platform-as-a-Service — often described as "the smallest PaaS implementation you've ever seen" and a self-hosted mini-Heroku. It turns a single Linux host (or a multi-host scheduler such as K3s or Nomad) into a `git push` deployment target that builds applications from Heroku-compatible buildpacks, Cloud Native Buildpacks, Nixpacks, Railpack, Dockerfiles, or pre-built Docker images. Dokku is MIT licensed, written primarily in Bash, and maintained by the Dokku organization on GitHub since 2013.
+Dokku is an open-source Docker-powered self-hosted Platform-as-a-Service that helps you build and manage the lifecycle of applications from initial push to scaling out. Often described as "the smallest PaaS implementation you've ever seen" and a self-hosted mini-Heroku, Dokku turns a single Linux host (or a multi-host scheduler such as K3s or Nomad) into a git-push deployment target that builds applications from Heroku-compatible buildpacks, Cloud Native Buildpacks, Nixpacks, Railpack, Dockerfiles, or pre-built Docker images. Dokku is MIT licensed, written primarily in Bash, and maintained by the Dokku organization on GitHub since 2013. It ships an extensive plugin ecosystem covering data stores (Postgres, MySQL, MariaDB, Redis, MongoDB, RabbitMQ, Elasticsearch, ClickHouse, Meilisearch, Typesense), TLS via Let's Encrypt, HTTP basic auth, maintenance mode, redirects, schedulers for Docker, K3s and Nomad, multiple HTTP proxies (Nginx, HAProxy, Caddy, Traefik, OpenResty), CI integrations, and an official GitHub Action. Dokku's primary interface is the `dokku` CLI invoked over SSH; there is no first-party public HTTP REST API in core (the historical `dokku-api` Ruby wrapper is archived and unmaintained).
 
-**APIs.json:** [apis.yml](https://raw.githubusercontent.com/api-evangelist/dokku/refs/heads/main/apis.yml)
+**Areas:** Platform-as-a-Service · Self-Hosted · Docker · Containers · Buildpacks · Deployment · DevOps · Heroku Alternative · Open Source · Git Push Deploy · Kubernetes · Nomad
 
-## Scope
+## Dokku on APIs.io
 
-- **Type:** Index
-- **x-type:** opensource
-- **License:** MIT
-- **Primary interface:** `dokku` CLI invoked over SSH
-- **Public REST/HTTP API:** None in core. The historical `dokku-api` Ruby wrapper is archived and unmaintained.
+Everything profiled for Dokku is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/dokku/](https://apis.io/providers/dokku/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### Published properties
 
-PaaS, Self-Hosted, Docker, Containers, Buildpacks, Deployment, DevOps, Heroku Alternative, Open Source, Git Push Deploy, Kubernetes, Nomad, K3s, CLI, Plugins
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Security (1)
 
-Dokku does not expose a first-party public HTTP REST API in its core distribution. Operators interact with Dokku through the `dokku` CLI, which is invoked locally on the host or remotely over SSH (`ssh dokku@host <command>`). Application deployment is performed by pushing a git remote to the Dokku host, which triggers the configured builder (buildpacks, Dockerfile, Nixpacks, Railpack, Cloud Native Buildpacks, or Lambda) and the configured scheduler (Docker local, K3s, or Nomad).
+Authentication, trust centre, and vulnerability disclosure.
 
-The archived `dokku/dokku-api` project previously exposed an HTTP wrapper on top of the `dokku-daemon` service but is no longer maintained and is not recommended for new deployments.
+- [Dokku Domain Security](https://apis.io/security/dokku/dokku-domain-security/)
 
-## Builders
+## Where to find this API
 
-- Cloud Native Buildpacks
-- Herokuish (Heroku-compatible buildpacks)
-- Dockerfile
-- Nixpacks
-- Railpack
-- Lambda (via `lambda-builder`)
-- Null
-
-## Schedulers
-
-- Docker Local (default, single host)
-- K3s (`scheduler-k3s`, lightweight Kubernetes)
-- Nomad (`dokku-scheduler-nomad`)
-- Null
-
-## HTTP Proxies
-
-- Nginx (default)
-- HAProxy
-- Caddy
-- Traefik
-- OpenResty
-
-## Official Plugins and Tooling
-
-Datastores: dokku-postgres, dokku-mysql, dokku-mariadb, dokku-redis, dokku-mongo, dokku-memcached, dokku-rabbitmq, dokku-elasticsearch, dokku-couchdb, dokku-rethinkdb, dokku-clickhouse, dokku-meilisearch, dokku-typesense, dokku-solr, dokku-nats, dokku-pushpin, dokku-graphite.
-
-Operations: dokku-letsencrypt, dokku-maintenance, dokku-http-auth, dokku-redirect, dokku-copy-files-to-image, dokku-event-listener, dokku-update, dokku-cron-restart.
-
-Integrations: `github-action`, `gitlab-ci`, `dokku-orb` (CircleCI), `ansible-dokku`, `azure-quickstart-templates`, `homebrew-repo`.
-
-Supporting projects: herokuish (build environment), plugn (plugin/hook system), sshcommand (SSH thin client), procfile-util, docker-image-labeler, netrc, sigil, docker-container-healthchecker, openresty-docker-proxy, compose-transpiler.
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://dokku.com)
 - [Documentation](https://dokku.com/docs/)
-- [Getting Started](https://dokku.com/docs/getting-started/installation/)
-- [Tutorials](https://dokku.com/tutorials/)
+- [Getting started](https://dokku.com/docs/getting-started/installation/)
 - [Blog](https://dokku.com/blog/)
-- [GitHub](https://github.com/dokku/dokku)
-- [GitHub Organization](https://github.com/dokku/)
-- [Releases](https://github.com/dokku/dokku/releases)
-- [License (MIT)](https://github.com/dokku/dokku/blob/master/LICENSE)
-- [Sponsorship](https://github.com/sponsors/dokku)
-- [Dokku Pro](https://pro.dokku.com/)
-- [Discord](https://discord.gg/YQjANGMZ)
-- [Slack](https://slack.dokku.com/)
-- [GitHub Discussions](https://github.com/dokku/dokku/discussions)
+- [GitHub](https://github.com/dokku/)
 
-## Maintainers
+## API Evangelist rating
 
-- **FN:** Kin Lane
-- **Email:** kinlane@gmail.com
+**Kin Score 11.6** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 28.6 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/dokku/](https://apis.io/providers/dokku/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Dokku: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/dokku/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
